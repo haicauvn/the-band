@@ -23,6 +23,7 @@ html{
     top: 0;
     left: 0;
     right: 0;
+    z-index: 1;
 }
 
 #nav {
@@ -96,10 +97,29 @@ html{
 
 
 #slider {
-    background-color: #666;
-    height: 1000px;
+    position: relative;
     margin-top: 46px;
+    background: url('/asset/img/slider/slider1.jpg') top center / cover no-repeat;
+    padding-top: 50%;
 }
+
+#slider .text-content {
+    position: absolute;
+    bottom: 48px;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    color: white;
+}
+
+#slider .text-title {
+    margin-bottom: 25px;
+}
+
+#slider .text-description {
+    font-weight: 500;
+}
+
 
 #content {
 
