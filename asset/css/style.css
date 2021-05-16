@@ -19,6 +19,10 @@ html{
 #header {
     height: 46px;
     background-color: black;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
 }
 
 #nav {
@@ -92,8 +96,9 @@ html{
 
 
 #slider {
-    /* background-color: #666;
-    height: 300px; */
+    background-color: #666;
+    height: 1000px;
+    margin-top: 46px;
 }
 
 #content {
