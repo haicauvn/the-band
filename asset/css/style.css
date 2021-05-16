@@ -21,6 +21,10 @@ html{
     background-color: black;
 }
 
+#nav {
+    display: inline-block;
+}
+
 #nav li {
     position: relative;
     display: inline-block;
@@ -68,6 +72,24 @@ html{
     display: none;
     box-shadow: 0 0 10px #666;
 }
+
+#header .search-btn {
+    float: right;
+    height: 46px;
+}
+
+#header .search-btn:hover{
+    background-color: #f44336;
+    cursor: pointer;
+}
+
+#header .search-icon {
+    color: white;
+    line-height: 46px;
+    padding: 0 23px;
+}
+
+
 
 #slider {
     /* background-color: #666;
