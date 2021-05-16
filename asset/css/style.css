@@ -22,32 +22,56 @@ html{
 }
 
 #nav li {
+    position: relative;
     display: inline-block;
 }
 
-#nav li a{
+#nav li a {
     line-height: 46px;
     padding: 0 24px;
-}
-
-#nav li a {
     text-decoration: none;
     color: white;
     display: block;
+}
+
+#nav > li > a {
     text-transform: uppercase;
 }
 
-#nav li:hover a {
+#nav #subnav li:hover a,
+#nav li:hover > a {
     color: black;
     background-color: #ccc;
 }
 
+#nav li:hover #subnav {
+    background-color: white;
+    display: block;
+}
+
+#nav #subnav{
+    position: absolute;
+    top: 100%;
+    left: 0;
+    color: black;
+}
+
+#nav #subnav a {
+    height: 38px;
+    line-height: 38px;
+    color: black;
+    min-width: 140px;
+    padding: 0 12px;
+}
+
 #subnav {
     display: none;
+    box-shadow: 0 0 10px #666;
 }
 
 #slider {
-
+    /* background-color: #666;
+    height: 300px; */
 }
 
 #content {
