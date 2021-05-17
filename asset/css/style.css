@@ -16,6 +16,10 @@ html{
 
 }
 
+.clear{
+    clear: both;
+}
+
 #header {
     height: 46px;
     background-color: black;
@@ -124,6 +128,61 @@ html{
 #content {
 
 }
+
+#content .content-section {
+    margin-left: auto;
+    margin-right: auto;
+    padding: 64px 16px;
+    max-width: 800px;
+}
+
+#content .content-heading {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 10px 0;
+    font-size: 30px;
+    letter-spacing: 4px;
+    font-weight: 400;
+    font-style: normal;
+    text-align: center;
+}
+
+#content .content-sub-heading {
+    text-align: center;
+    font-size: 15px;
+    font-style: italic;
+    opacity: 0.6;
+    margin: 15px 0;
+}
+
+#content .about-section {
+    font-size: 15px;
+    text-align: justify;
+    line-height: 1.4;
+    margin: 15px 0;
+}
+
+#content .member-list {
+    padding: 32px 0;
+}
+
+#content .member-item {
+    float: left;
+    width: 33.33333%;
+    text-align: center;
+}
+
+#content .member-name {
+    margin: 15px 0;
+    font-size: 15px;
+}
+
+#content .member-img {
+    width: 153px;
+    height: 153px;
+    margin: 0 0 16px;
+    border-radius: 4px;
+}
+
 
 #fotter {
 
