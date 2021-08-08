@@ -12,6 +12,7 @@
 
 html {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
+    scroll-behavior: smooth;
 }
 
 .clear {
@@ -33,6 +34,16 @@ html {
     padding-bottom: 16px;
 }
 
+.col::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.col-full {
+    width: 100%;
+}
+
 .col-third {
     width: 33.33333%;
 }
@@ -44,6 +55,12 @@ html {
 .row {
     margin-left: -8px;
     margin-right: -8px;
+}
+
+.row::after {
+    content: "";
+    display: block;
+    clear: both;
 }
 
 /*  Main */
@@ -161,7 +178,7 @@ html {
 #content .content-section {
     margin-left: auto;
     margin-right: auto;
-    padding: 64px 16px;
+    padding: 64px 16px 98px;
     max-width: 800px;
 }
 
@@ -191,7 +208,7 @@ html {
 }
 
 #content .member-list {
-    padding: 32px 0;
+    padding: 32px 0 0;
 }
 
 #content .member-name {
@@ -288,7 +305,73 @@ html {
     color: black;
 }
 
-#fotter {}
+.contact-section {
+    margin-top: 47px;
+}
+
+.contact-section .icon-contact {
+    width: 30px;
+}
+
+.contact-section .contact-info {
+    font-size: 18px;
+}
+
+.contact-section .input-contact-form {
+    height: 40px;
+    width: 100%;
+    padding-left: 10px;
+    border: 1px solid #ccc!important;
+}
+
+.contact-section .btn-form-submit {
+    padding: 10px 17px;
+    margin-right: 8px;
+    background-color: #000;
+    color: #fff;
+    border: solid 1px #ccc;
+    float: right;
+    cursor: pointer;
+}
+
+.contact-section .btn-form-submit:hover {
+    background-color: #ccc;
+}
+
+.map-section .map-img {
+    width: 100%;
+}
+
+#fotter {
+    text-align: center;
+    padding: 64px 0;
+}
+
+.social-list {}
+
+.social-list a {
+    color: rgb(0, 0, 0, 0.6);
+    text-decoration: none;
+}
+
+.social-list a i {
+    font-size: 24px;
+    margin: 8px 0;
+}
+
+.copy-right {
+    margin-top: 15px;
+    color: rgb(0, 0, 0, 0.6);
+    margin-bottom: 15px;
+}
+
+.copy-right a {
+    color: rgb(0, 0, 0, 0.6);
+}
+
+.copy-right a:hover, .social-list a i:hover {
+    color: rgb(0, 0, 0, 0.4);
+}
 
 .modal {
     position: fixed;
@@ -330,8 +413,6 @@ html {
 .modal-close:hover {
     background-color: #ccc;
 }
-
-
 
 .modal-header {
     display: flex;
@@ -382,7 +463,7 @@ html {
     margin-left: 10px;
 }
 
-.modal-footer{
+.modal-footer {
     padding: 15px;
     text-align: right;
 }
