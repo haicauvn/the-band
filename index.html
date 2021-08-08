@@ -15,9 +15,9 @@
         <div id="header">
             <ul id="nav">
                 <li><a href="#">Home</a></li>
-                <li><a href="#">Band</a></li>
-                <li><a href="#">Tour</a></li>
-                <li><a href="#">Contact</a></li>
+                <li><a href="#band">Band</a></li>
+                <li><a href="#tour">Tour</a></li>
+                <li><a href="#contact">Contact</a></li>
                 <li>
                     <a href="#">More
                         <i class="fas fa-caret-down"></i>
@@ -44,7 +44,7 @@
 
         <div id="content">
             <!-- About Section -->
-            <div class="content-section">
+            <div id="band" class="content-section">
                 <h2 class="content-heading">THE BAND</h2>
                 <p class="content-sub-heading">We love music</p>
                 <p class="about-section">We have created a fictional band website. Lorem ipsum dolor sit amet,
@@ -73,7 +73,7 @@
             </div>
 
             <!-- Tour Section -->
-            <div class="tour-section">
+            <div id="tour" class="tour-section">
                 <div class="content-section">
                     <!-- tickets list -->
                     <h2 class="content-heading text-white">TOUR DATES</h2>
@@ -115,21 +115,61 @@
                                 <button class="place-buy-btn js-buy-tickets">Buy Tickets</button>
                             </div>
                         </div>
-                        <div class="clear"></div>
                     </div>
 
                 </div>
             </div>
 
             <!-- Contact Section -->
-            <div class="content-section">
+            <div id="contact" class="content-section">
                 <h2 class="content-heading">CONTACT</h2>
                 <p class="content-sub-heading">Fan? Drop a note!</p>
+                <div class="contact-section">
+                    <div class="row">
+                        <div class="col col-half">
+                            <div class="contact-info">
+                                <p><i class="icon-contact fa fa-map-marker-alt"></i>Chicago, US</p>
+                                <p><i class="icon-contact fa fa-phone"></i>Phone: +00 151515</p>
+                                <p><i class="icon-contact fa fa-envelope"></i>Email: mail@mail.com</p>
+                            </div>
+                        </div>
+                        <div class="col col-half">
+                            <form action="">
+                                <div class="col col-half">
+                                    <input class="input-contact-form" type="text" required placeholder="Name">
+                                </div>
+                                <div class="col col-half">
+                                    <input class="input-contact-form" type="text" required placeholder="Email">
+                                </div>
+                                <div class="col col-full">
+                                    <input class="input-contact-form" type="text" required placeholder="Message">
+                                </div>
+                                <input class="btn-form-submit" type="submit" value="SEND">
+                            </form>
+                        </div>
+                    </div>
+                </div>
             </div>
+
+            <!-- End Section Section -->
+            <div class="map-section">
+                <img src="asset/img/map/map.jpg" alt="Map" class="map-img">
+            </div>
+
         </div>
 
         <div id="fotter">
-
+            <div class="social-list">
+                <a href=""><i class="fab fa-facebook-square"></i></a>
+                <a href=""><i class="fab fa-instagram-square"></i></a>
+                <a href=""><i class="fab fa-snapchat-square"></i></a>
+                <a href=""><i class="fab fa-pinterest-square"></i></a>
+                <a href=""><i class="fab fa-twitter-square"></i></a>
+                <a href=""><i class="fab fa-linkedin"></i></a>
+            </div>
+            <div class="copy-right">
+                <p>Powered by <a href="">w3.css</a></p>
+            </div>
         </div>
 
         <div class="modal">
@@ -147,7 +187,7 @@
                             <i class="fas fa-shopping-cart"></i>
                             Tickets, $15 per person
                         </label>
-                        <input class="input-modal" id="tickets-quatity" type="text"  placeholder="How many?">
+                        <input class="input-modal" id="tickets-quatity" type="text" placeholder="How many?">
                     </div>
                     <div class="item-modal">
                         <label for="tickets-email" class="title-modal">
@@ -185,7 +225,7 @@
 
         modal.addEventListener('click', hideBuyTickets)
 
-        modalContainer.addEventListener('click', function(event){
+        modalContainer.addEventListener('click', function (event) {
             event.stopPropagation();
         })
 
